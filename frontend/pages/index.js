@@ -14,14 +14,24 @@ export default function Firstpage() {
 
       <div className="relative grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-7 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-10 row-start-2 items-center">
-          <a className="text-white font-bold text-4xl">
-            BECOME A<br></br>LEADER<br></br>RANKED 6TH<br></br>WITH MRIH
-          </a>
-          <a className="text-white font-bold text-1xl">
-            Our app is for enthusiastic<br></br>learners who dream of a better{" "}
-            <br></br>version of yourself
-          </a>
 
+          {/* Text Block with Background */}
+          <div className="bg-black/60 p-6 rounded-xl text-center text-white shadow-lg">
+            <a className="font-bold text-4xl leading-snug">
+              BECOME A<br />
+              LEADER<br />
+              RANKED 6TH<br />
+              WITH MRIH
+            </a>
+
+            <a className="font-medium text-base mt-4 block">
+              Our app is for enthusiastic<br />
+              learners who dream of a better<br />
+              version of yourself
+            </a>
+          </div>
+
+          {/* Button */}
           <div className="flex items-center flex-col sm:flex-row">
             <Link
               href="/page2"
