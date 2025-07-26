@@ -3,9 +3,14 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   const [dragging, setDragging] = useState(null);
+  const [showPopup, setShowPopup] = useState(true);
+
+  const handleTeamGoalsClick = () => {
+    window.location.href = "http://localhost:3001/goal";
+  };
 
   return (
-    <div className="bg-black min-h-screen text-white">
+    <div className="bg-black min-h-screen text-white relative">
       {/* Navigation Bar */}
       <nav className="flex justify-center py-4 space-x-4">
         <button className="bg-basic-yellow px-4 py-2 rounded-full text-black font-bold">HOME</button>
@@ -67,6 +72,22 @@ const Home = () => {
           <div className="w-[350px] h-[90px] bg-white rounded-xl absolute bottom-9 left-1/2 -translate-x-1/2" />
         </motion.div>
       </div>
+
+      {/* Bottom-Right Pop-up */}
+      {showPopup && (
+        <div className="fixed bottom-6 right-6 bg-white text-black rounded-xl shadow-lg p-4 z-50 w-64">
+          <div className="flex justify-between items-start">
+            <div className="text-base font-semibold">Hi there, want to know what we do?</div>
+            <button onClick={() => setShowPopup(false)} className="ml-2 text-xl leading-none">&times;</button>
+          </div>
+          <button
+            onClick={handleTeamGoalsClick}
+            className="mt-3 w-full bg-black text-white font-bold py-2 px-4 rounded-full hover:bg-gray-800 transition"
+          >
+            Team Goals
+          </button>
+        </div>
+      )}
     </div>
   );
 };

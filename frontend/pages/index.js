@@ -21,7 +21,7 @@ export default function Firstpage() {
               BECOME A<br />
               LEADER<br />
               RANKED 6TH<br />
-              WITH MRIH
+              WITH MRICH
             </a>
 
             <a className="font-medium text-base mt-4 block">
@@ -42,6 +42,7 @@ export default function Firstpage() {
           </div>
         </main>
       </div>
+
     </div>
   );
 }

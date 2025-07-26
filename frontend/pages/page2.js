@@ -15,11 +15,16 @@ export default function Page2() {
 
       {/* Main Content */}
       <div className="relative z-10 p-6">
-        <h1 className="text-3xl sm:text-5xl font-bold mb-4">MRICH</h1>
-        <p className="text-lg sm:text-xl">
-          โรงเรียน "สร้างนิสัย" <br></br>ที่ทำให้คุณมีความสุขเเละความสำเร็จใน<br></br>ทุกด้านของชีวิต
-        </p>
+        <div className="bg-black/60 p-6 rounded-xl text-center text-white shadow-lg">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4">MRICH</h1>
+          <p className="text-lg sm:text-xl">
+            โรงเรียน "สร้างนิสัย" <br />
+            ที่ทำให้คุณมีความสุขเเละความสำเร็จใน<br />
+            ทุกด้านของชีวิต
+          </p>
+        </div>
       </div>
+
 
       {/* Sign In and Sign Up Buttons with Separator */}
       <div className="relative z-10 mt-6 flex flex-col items-center gap-4">

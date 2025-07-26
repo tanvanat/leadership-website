@@ -33,21 +33,23 @@ export default function Goal() {
 
       {/* Main Content */}
       <div className="relative z-10 p-6">
-        <h1 className="text-3xl sm:text-5xl font-bold mb-4">เป้าหมายองค์กร</h1>
-        <p className="text-lg sm:text-xl">เป้าหมายองค์กรคือ .....</p>
+        <div className="bg-black/60 p-6 rounded-xl text-center text-white shadow-lg">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4">เป้าหมายองค์กร</h1>
+          <p className="text-lg sm:text-xl">เป้าหมายองค์กรคือ .....</p>
+        </div>
       </div>
+
 
       {/* Continue Button */}
       <button
-        className={`z-10 w-48 rounded-full transition-colors border border-solid border-white h-10 sm:h-12 px-4 sm:px-5${
-          isButtonEnabled
+        className={`z-10 w-48 rounded-full transition-colors border border-solid border-white h-10 sm:h-12 px-4 sm:px-5${isButtonEnabled
             ? "cursor-pointer bg-white text-black"
             : "cursor-not-allowed opacity-50"
-        }`}
+          }`}
         disabled={!isButtonEnabled}
         onClick={navigateToHome}
       >
-        Continue
+        Back
       </button>
     </div>
   );
